@@ -11,6 +11,9 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <div class="scroll-progress" aria-hidden="true"></div>
+  <div class="ambient ambient-a" aria-hidden="true"></div>
+  <div class="ambient ambient-b" aria-hidden="true"></div>
   <div class="noise"></div>
   <header class="nav-wrap">
     <nav class="nav shell">
@@ -30,17 +33,27 @@
     <section class="hero shell">
       <div class="hero-copy reveal">
         <p class="eyebrow">COLTS NECK HIGH SCHOOL · CLASS OF 2027 · NEW JERSEY</p>
-        <h1>Student Leader.<br>Founder.<br><em>Entrepreneur.</em></h1>
-        <p class="hero-text">I’m a high school student building projects around business, service, music, and community. From founding a nonprofit to launching a clothing brand, I’m interested in turning ideas into things that make a real impact.</p>
+        <h1>I <span class="cycle-word" aria-live="polite">build</span><br>things people<br><em>can join.</em></h1>
+        <p class="hero-text">I’m a high school student who likes turning ideas into real things — a nonprofit, a brand, programs, teams, and communities. I care most about the point where an idea stops being hypothetical and starts involving other people.</p>
         <div class="actions">
           <a class="btn primary" href="#work">Explore My Work</a>
           <a class="btn ghost" href="https://www.linkedin.com/in/noahalter" target="_blank" rel="noopener">Connect on LinkedIn ↗</a>
         </div>
       </div>
-      <figure class="hero-photo reveal">
-        <img src="assets/photo-7.jpg" alt="Noah Alter in a blue suit" />
+      <figure class="hero-photo reveal tilt-card" data-tilt>
+        <img src="assets/photo-7.jpg" alt="Noah Alter in a blue suit" data-parallax="0.04" />
         <figcaption>NOAH ALTER · 2026</figcaption>
+        <span class="hero-sticker sticker-one">BUILDER</span>
+        <span class="hero-sticker sticker-two">LEADER</span>
+        <span class="hero-sticker sticker-three">CREATOR</span>
       </figure>
+    </section>
+
+    <section class="marquee-band" aria-label="What I care about">
+      <div class="marquee-track">
+        <span>BUSINESS</span><i>✦</i><span>COMMUNITY</span><i>✦</i><span>MUSIC</span><i>✦</i><span>DESIGN</span><i>✦</i><span>LEADERSHIP</span><i>✦</i><span>SERVICE</span><i>✦</i>
+        <span>BUSINESS</span><i>✦</i><span>COMMUNITY</span><i>✦</i><span>MUSIC</span><i>✦</i><span>DESIGN</span><i>✦</i><span>LEADERSHIP</span><i>✦</i><span>SERVICE</span><i>✦</i>
+      </div>
     </section>
 
     <section id="about" class="section shell split">
@@ -52,8 +65,36 @@
           <p>That has meant starting a nonprofit, creating an apparel brand, leading within BBYO, volunteering as a junior firefighter, competing in DECA, and working with kids in my community.</p>
           <p>Each experience has taught me something different about leadership. I’ve learned that leading is not always about being the loudest person in the room. It is about bringing people together, taking responsibility, and turning ideas into action.</p>
         </div>
-        <div class="about-photo reveal">
+        <div class="about-photo reveal tilt-card" data-tilt>
           <img src="assets/photo-1.jpg" alt="Professional portrait of Noah Alter" />
+          <div class="photo-note">I’d rather build something imperfect than wait forever for the perfect idea.</div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="manifesto section">
+      <div class="shell">
+        <div class="manifesto-intro reveal">
+          <div class="section-kicker">MY OPERATING SYSTEM</div>
+          <h2>Three rules I keep coming back to.</h2>
+        </div>
+        <div class="manifesto-grid">
+          <article class="manifesto-card reveal">
+            <span>01</span>
+            <h3>Start before it feels finished.</h3>
+            <p>The fastest way I learn is by making something real, showing it to people, and improving it from there.</p>
+          </article>
+          <article class="manifesto-card reveal">
+            <span>02</span>
+            <h3>People make the idea matter.</h3>
+            <p>A program, brand, or organization only becomes meaningful when other people feel like they belong in it.</p>
+          </article>
+          <article class="manifesto-card reveal">
+            <span>03</span>
+            <h3>Do the unglamorous part too.</h3>
+            <p>Planning, follow-up, logistics, revisions, cleanup — the work behind the work is usually what makes the visible part possible.</p>
+          </article>
         </div>
       </div>
     </section>
@@ -62,14 +103,15 @@
       <div class="shell">
         <div class="section-head reveal">
           <div class="section-kicker">02 · FEATURED WORK</div>
-          <h2>What I’ve built.</h2>
+          <h2>Not just ideas.<br><em>Things that exist.</em></h2>
         </div>
 
-        <article class="project project-um reveal">
+        <article class="project project-um reveal project-case" data-project="01">
           <div class="project-media">
             <img src="https://static.wixstatic.com/media/9650a4_b2440f8f245543e2b7a13ed58c48dd88~mv2.jpeg" alt="Unique Melodies hands-on music program" loading="eager" decoding="async" fetchpriority="high" />
           </div>
           <div class="project-copy">
+            <div class="project-number">01 / UNIQUE MELODIES</div>
             <span class="tag">NONPROFIT · FOUNDER & PRESIDENT</span>
             <h3>Unique Melodies</h3>
             <p>I founded Unique Melodies to make music education more accessible and inclusive for individuals with special needs.</p>
@@ -78,8 +120,9 @@
           </div>
         </article>
 
-        <article class="project project-maxout reveal">
+        <article class="project project-maxout reveal project-case" data-project="02">
           <div class="project-copy">
+            <div class="project-number">02 / MAXOUT</div>
             <span class="tag">APPAREL · FOUNDER</span>
             <h3>MAXOUT</h3>
             <p>I created MAXOUT as an athletic and lifestyle clothing brand built around ambition, discipline, and pushing beyond your limits.</p>
@@ -92,8 +135,9 @@
           </div>
         </article>
 
-        <article class="project leadership-card reveal">
+        <article class="project leadership-card reveal project-case" data-project="03">
           <div class="project-copy wide-copy">
+            <div class="project-number">03 / LEADERSHIP</div>
             <span class="tag">LEADERSHIP</span>
             <h3>Turning ideas into action.</h3>
             <p>Leadership has become one of the most important parts of my high school experience. Whether I am leading a nonprofit, working with a BBYO chapter, organizing programs, or helping younger students, I try to focus on making the people around me feel included and capable of succeeding.</p>
@@ -106,10 +150,25 @@
       </div>
     </section>
 
+
+    <section class="story-break">
+      <div class="shell story-grid">
+        <div class="story-sticky reveal">
+          <div class="section-kicker">THE THROUGH LINE</div>
+          <h2>I’m interested in what happens when <em>people care enough to participate.</em></h2>
+        </div>
+        <div class="story-cards">
+          <article class="story-card reveal"><span>BUILD</span><p>Turn a rough idea into something people can actually see, use, attend, wear, or join.</p></article>
+          <article class="story-card reveal"><span>LEAD</span><p>Create enough structure that other people can take ownership instead of waiting for instructions.</p></article>
+          <article class="story-card reveal"><span>SERVE</span><p>Use the same energy for things that are not about me — whether that is music access, younger kids, or my community.</p></article>
+        </div>
+      </div>
+    </section>
+
     <section id="leadership" class="section shell">
       <div class="section-head reveal">
         <div class="section-kicker">03 · LEADERSHIP & SERVICE</div>
-        <h2>Leadership with purpose.</h2>
+        <h2>Roles are temporary.<br><em>The lessons stick.</em></h2>
       </div>
       <div class="timeline">
         <article class="timeline-item reveal"><div class="timeline-year">NOW</div><div><h3>Greater Jersey Region BBYO — S’gan / Vice President</h3><p>Help lead programming across the region, work with chapter leaders, support regional initiatives, and help create engaging experiences for Jewish teens.</p></div></article>
@@ -125,7 +184,7 @@
       <div class="shell edu-grid">
         <div class="reveal">
           <div class="section-kicker">04 · EDUCATION</div>
-          <h2>Learning beyond the classroom.</h2>
+          <h2>School is one part<br>of how I learn.</h2>
           <p class="lead">Colts Neck High School · Class of 2027</p>
           <p>Student focused on business, economics, entrepreneurship, leadership, and communication.</p>
         </div>
@@ -141,7 +200,7 @@
     <section class="section shell entrepreneurship">
       <div class="section-head reveal">
         <div class="section-kicker">05 · ENTREPRENEURSHIP</div>
-        <h2>Building from zero.</h2>
+        <h2>I like the messy<br>beginning.</h2>
       </div>
       <div class="entre-grid">
         <div class="reveal">
@@ -159,7 +218,7 @@
       <div class="shell">
         <div class="section-head reveal">
           <div class="section-kicker">06 · BEYOND BUSINESS</div>
-          <h2>More than one lane.</h2>
+          <h2>There’s more to me<br>than a title.</h2>
         </div>
         <div class="beyond-grid">
           <article class="beyond-card reveal"><span>01</span><h3>Junior Firefighting</h3><p>Community service, teamwork, preparedness, and responsibility.</p></article>
@@ -170,8 +229,21 @@
       </div>
     </section>
 
+
+    <section class="now-strip">
+      <div class="shell now-grid">
+        <div class="now-title reveal"><span class="live-dot"></span> CURRENTLY</div>
+        <div class="now-items">
+          <div class="now-item reveal"><span>BUILDING</span><strong>Unique Melodies</strong></div>
+          <div class="now-item reveal"><span>GROWING</span><strong>MAXOUT</strong></div>
+          <div class="now-item reveal"><span>LEADING</span><strong>BBYO</strong></div>
+          <div class="now-item reveal"><span>LEARNING</span><strong>Business, accounting & entrepreneurship</strong></div>
+        </div>
+      </div>
+    </section>
+
     <section class="quote-section">
-      <img src="assets/photo-8.jpg" alt="Noah Alter outdoors in a suit" />
+      <img src="assets/photo-8.jpg" alt="Noah Alter outdoors in a suit" data-parallax="0.08" />
       <div class="quote-overlay"></div>
       <div class="quote-content shell reveal">
         <p class="quote-mark">“</p>
@@ -183,7 +255,7 @@
     <section class="section shell">
       <div class="section-head reveal">
         <div class="section-kicker">07 · IN ACTION</div>
-        <h2>A few moments behind the work.</h2>
+        <h2>What the work<br>actually looks like.</h2>
       </div>
       <div class="gallery">
         <figure class="g1 reveal"><img src="https://static.wixstatic.com/media/9650a4_5ea8de591b844145b52955088961d899~mv2.jpeg" alt="Hands-on Unique Melodies program moment" loading="lazy" decoding="async" /></figure>
@@ -193,7 +265,7 @@
       </div>
     </section>
 
-    <section id="contact" class="contact section">
+    <section id="contact" class="contact section contact-final">
       <div class="shell contact-inner reveal">
         <div>
           <div class="section-kicker">08 · CONTACT</div>
