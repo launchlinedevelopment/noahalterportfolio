@@ -95,7 +95,7 @@ body{overflow-x:hidden}
 .gallery figure:hover{transform:translateY(-6px);box-shadow:0 18px 40px rgba(16,24,40,.16)}
 .gallery figure:hover::after{opacity:1;transform:none}
 .contact-final{position:relative;overflow:hidden}
-.contact-final::before{content:"HELLO";position:absolute;left:-1vw;bottom:-10vw;font-family:"DM Serif Display",serif;font-size:24vw;color:rgba(255,255,255,.025)}
+.contact-final::before{content:"HELLO";position:absolute;left:-1vw;bottom:-10vw;font-family:"DM Serif Display",serif;font-size:24vw;color:rgba(255,255,255,.025);pointer-events:none;z-index:0}
 .contact-links a{transition:padding-left .22s ease,color .22s ease}.contact-links a:hover{padding-left:12px;color:#9fc3ef}
 @media(max-width:900px){
   .manifesto-intro,.story-grid{grid-template-columns:1fr}.manifesto-grid{grid-template-columns:1fr}.manifesto-card{min-height:230px}
@@ -113,3 +113,6 @@ body{overflow-x:hidden}
 .section-cycle{display:inline-block;color:#356fb2;font-family:Manrope,system-ui,sans-serif;font-style:normal;font-weight:800;transition:opacity .2s ease,transform .2s ease;min-width:1ch}
 .section-cycle.swap{opacity:0;transform:translateY(7px)}
 .work-section .section-cycle,.contact .section-cycle{color:#8eb8ff}
+
+.contact-final .contact-inner{position:relative;z-index:1}
+.contact-links a{position:relative;z-index:2;pointer-events:auto}
