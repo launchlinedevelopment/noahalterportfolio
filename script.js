@@ -58,3 +58,24 @@ if(parallaxEls.length && !window.matchMedia('(prefers-reduced-motion: reduce)').
   document.addEventListener('scroll',parallax,{passive:true});
   parallax();
 }
+
+
+const sectionCycles=[...document.querySelectorAll('.section-cycle')];
+if(sectionCycles.length && !window.matchMedia('(prefers-reduced-motion: reduce)').matches){
+  sectionCycles.forEach((el,i)=>{
+    const words=(el.dataset.words||'').split('|').filter(Boolean);
+    if(words.length<2) return;
+    let index=0;
+    const delay=2600+(i%3)*320;
+    setTimeout(()=>{
+      setInterval(()=>{
+        el.classList.add('swap');
+        setTimeout(()=>{
+          index=(index+1)%words.length;
+          el.textContent=words[index];
+          el.classList.remove('swap');
+        },190);
+      },delay);
+    },i*180);
+  });
+}
