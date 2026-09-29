@@ -109,3 +109,7 @@ body{overflow-x:hidden}
 @media(prefers-reduced-motion:reduce){
   *{scroll-behavior:auto!important}.marquee-track{animation:none}.reveal{opacity:1;transform:none;transition:none}.hero-photo,.about-photo{transform:none!important}
 }
+
+.section-cycle{display:inline-block;color:#356fb2;font-family:Manrope,system-ui,sans-serif;font-style:normal;font-weight:800;transition:opacity .2s ease,transform .2s ease;min-width:1ch}
+.section-cycle.swap{opacity:0;transform:translateY(7px)}
+.work-section .section-cycle,.contact .section-cycle{color:#8eb8ff}
