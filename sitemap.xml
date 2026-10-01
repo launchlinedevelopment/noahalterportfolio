@@ -1,9 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://noahalter.com/</loc>
     <lastmod>2026-10-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://noahalter.com/assets/photo-7.jpg</image:loc>
+      <image:caption>Noah Alter professional portrait in a blue suit</image:caption>
+      <image:title>Noah Alter professional portrait</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://noahalter.com/assets/photo-1.jpg</image:loc>
+      <image:caption>Professional headshot of Noah Alter</image:caption>
+      <image:title>Noah Alter headshot</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://noahalter.com/assets/photo-2.jpg</image:loc>
+      <image:caption>Noah Alter studio portrait</image:caption>
+      <image:title>Noah Alter studio portrait</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://noahalter.com/assets/photo-8.jpg</image:loc>
+      <image:caption>Noah Alter outdoor professional portrait</image:caption>
+      <image:title>Noah Alter outdoor portrait</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://noahalter.com/photos.html</loc>
+    <lastmod>2026-10-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://noahalter.com/assets/photo-7.jpg</image:loc>
+      <image:caption>Noah Alter professional portrait in a blue suit</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://noahalter.com/assets/photo-1.jpg</image:loc>
+      <image:caption>Professional headshot of Noah Alter</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://noahalter.com/assets/photo-2.jpg</image:loc>
+      <image:caption>Noah Alter studio portrait</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://noahalter.com/assets/photo-8.jpg</image:loc>
+      <image:caption>Noah Alter outdoor professional portrait</image:caption>
+    </image:image>
   </url>
 </urlset>
