@@ -116,3 +116,69 @@ body{overflow-x:hidden}
 
 .contact-final .contact-inner{position:relative;z-index:1}
 .contact-links a{position:relative;z-index:2;pointer-events:auto}
+
+
+/* --- Case study + build process + accounting bridge --- */
+.case-notes{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:28px 0 4px}
+.case-notes>div{border:1px solid rgba(255,255,255,.1);border-radius:16px;padding:16px;background:rgba(255,255,255,.035)}
+.case-notes span{display:block;font-size:.58rem;letter-spacing:.13em;font-weight:800;color:#7890a9;margin-bottom:8px}
+.case-notes strong{display:block;font-size:.8rem;line-height:1.35;color:#eef3f8}
+
+.build-process{background:#f6f4ef;border-top:1px solid var(--line)}
+.process-head{display:grid;grid-template-columns:.34fr 1fr .7fr;gap:36px;align-items:end;margin-bottom:54px}
+.process-head h2{font-family:"DM Serif Display",serif;font-size:clamp(3.3rem,5.6vw,6.2rem);font-weight:400;line-height:.94;margin:0}
+.process-head p{margin:0;color:#64707f;font-size:1.03rem;max-width:420px}
+.process-layout{display:grid;grid-template-columns:.86fr 1.14fr;gap:42px;align-items:start}
+.process-steps{display:flex;flex-direction:column;border-top:1px solid var(--line)}
+.process-step{display:grid;grid-template-columns:64px 1fr;gap:18px;padding:22px 8px;border-bottom:1px solid var(--line);cursor:pointer;transition:padding-left .25s ease,background .25s ease,color .25s ease;outline:none}
+.process-step>span{font-size:.7rem;font-weight:800;letter-spacing:.12em;color:#85909e;padding-top:5px}
+.process-step h3{margin:0 0 5px;font-size:1.15rem}
+.process-step p{margin:0;color:#6a7481;font-size:.9rem}
+.process-step.active,.process-step:hover,.process-step:focus-visible{padding-left:18px;background:rgba(53,111,178,.07)}
+.process-step.active h3{color:#356fb2}
+.process-step.active>span{color:#356fb2}
+.process-display{position:sticky;top:116px;min-height:520px;border-radius:30px;background:#0e1a2a;color:white;padding:42px;overflow:hidden;box-shadow:0 30px 70px rgba(16,24,40,.18)}
+.process-display::before{content:"";position:absolute;width:330px;height:330px;border-radius:50%;right:-90px;top:-80px;background:radial-gradient(circle,rgba(126,174,231,.26),transparent 70%)}
+.process-display::after{content:"";position:absolute;left:34px;right:34px;bottom:34px;height:1px;background:rgba(255,255,255,.1)}
+.process-display-top{display:flex;align-items:center;justify-content:space-between;position:relative;z-index:1}
+.process-display-top span{font-family:"DM Serif Display",serif;font-size:6rem;line-height:1;color:rgba(255,255,255,.12)}
+.process-display-top small{font-size:.7rem;letter-spacing:.16em;font-weight:800;color:#8fb6e4}
+.process-display h3{font-family:"DM Serif Display",serif;font-size:3.4rem;font-weight:400;line-height:1;margin:90px 0 18px;position:relative;z-index:1}
+.process-display p{color:#c3ced9;font-size:1.02rem;max-width:560px;position:relative;z-index:1}
+.process-example{position:absolute;left:42px;bottom:52px;font-size:.65rem;letter-spacing:.15em;font-weight:800;color:#7690aa;z-index:1}
+.process-display.switching #process-title,.process-display.switching #process-copy,.process-display.switching #process-example{opacity:0;transform:translateY(8px)}
+#process-title,#process-copy,#process-example{transition:opacity .2s ease,transform .2s ease}
+
+.accounting-bridge{background:#dce6f0;position:relative;overflow:hidden}
+.accounting-bridge::before{content:"A + E";position:absolute;right:-2vw;top:-5vw;font-family:"DM Serif Display",serif;font-size:21vw;color:rgba(20,54,90,.035);pointer-events:none}
+.bridge-intro{display:grid;grid-template-columns:.3fr 1.7fr;gap:42px;align-items:start;margin-bottom:54px;position:relative;z-index:1}
+.bridge-intro h2{font-family:"DM Serif Display",serif;font-size:clamp(3.2rem,5.5vw,6.3rem);font-weight:400;line-height:.95;margin:0;max-width:980px}
+.bridge-split{display:grid;grid-template-columns:1fr 80px 1fr;gap:0;align-items:stretch;position:relative;z-index:1}
+.bridge-side{border-radius:28px;padding:38px;min-height:430px;display:flex;flex-direction:column}
+.bridge-create{background:#f8f6f1;border:1px solid rgba(13,20,32,.1)}
+.bridge-numbers{background:#0e1a2a;color:#f7f5f0}
+.bridge-label{font-size:.65rem;letter-spacing:.15em;font-weight:800;color:#718094}
+.bridge-numbers .bridge-label{color:#84a7cf}
+.bridge-side h3{font-family:"DM Serif Display",serif;font-weight:400;font-size:3.1rem;line-height:1;margin:22px 0 auto}
+.bridge-side ul{list-style:none;padding:0;margin:36px 0 0;display:flex;flex-wrap:wrap;gap:10px}
+.bridge-side li{padding:10px 13px;border-radius:999px;border:1px solid rgba(13,20,32,.12);font-size:.82rem;font-weight:700}
+.bridge-numbers li{border-color:rgba(255,255,255,.14);background:rgba(255,255,255,.04)}
+.bridge-center{display:flex;align-items:center;justify-content:center;position:relative;z-index:2}
+.bridge-center span{width:52px;height:52px;border-radius:50%;display:grid;place-items:center;background:#356fb2;color:white;font-size:1.55rem;font-weight:500;box-shadow:0 12px 28px rgba(53,111,178,.25)}
+.bridge-statement{font-family:"DM Serif Display",serif;font-size:clamp(2rem,3.4vw,4rem);line-height:1.06;max-width:1000px;margin:58px auto 0;text-align:center;position:relative;z-index:1}
+
+@media(max-width:900px){
+  .case-notes{grid-template-columns:1fr}
+  .process-head,.process-layout,.bridge-intro{grid-template-columns:1fr}
+  .process-display{position:relative;top:auto;min-height:430px}
+  .bridge-split{grid-template-columns:1fr;gap:14px}
+  .bridge-center{height:28px}
+  .bridge-center span{width:46px;height:46px}
+}
+@media(max-width:600px){
+  .process-display{padding:30px;min-height:400px}
+  .process-display h3{font-size:2.65rem;margin-top:66px}
+  .process-example{left:30px}
+  .bridge-side{padding:28px;min-height:340px}
+  .bridge-side h3{font-size:2.5rem}
+}
