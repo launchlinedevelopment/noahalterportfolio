@@ -31,7 +31,12 @@
         "@id": "https://noahalter.com/#noah-alter",
         "name": "Noah Alter",
         "url": "https://noahalter.com/",
-        "image": "https://noahalter.com/assets/photo-7.jpg",
+        "image": [
+          "https://noahalter.com/assets/photo-7.jpg",
+          "https://noahalter.com/assets/photo-1.jpg",
+          "https://noahalter.com/assets/photo-2.jpg",
+          "https://noahalter.com/assets/photo-8.jpg"
+        ],
         "description": "New Jersey student, entrepreneur, nonprofit founder, student leader, and aspiring accounting major.",
         "sameAs": [
           "https://www.linkedin.com/in/noahalter"
@@ -46,6 +51,43 @@
           "Pricing",
           "Community Service"
         ]
+      },
+      {
+        "@type": "ImageObject",
+        "@id": "https://noahalter.com/#portrait-main",
+        "contentUrl": "https://noahalter.com/assets/photo-7.jpg",
+        "url": "https://noahalter.com/assets/photo-7.jpg",
+        "name": "Noah Alter professional portrait",
+        "caption": "Noah Alter, New Jersey student, entrepreneur, nonprofit founder, and aspiring accounting major.",
+        "representativeOfPage": true,
+        "creator": { "@id": "https://noahalter.com/#noah-alter" }
+      },
+      {
+        "@type": "ImageObject",
+        "@id": "https://noahalter.com/#portrait-headshot",
+        "contentUrl": "https://noahalter.com/assets/photo-1.jpg",
+        "url": "https://noahalter.com/assets/photo-1.jpg",
+        "name": "Noah Alter headshot",
+        "caption": "Professional headshot of Noah Alter.",
+        "creator": { "@id": "https://noahalter.com/#noah-alter" }
+      },
+      {
+        "@type": "ImageObject",
+        "@id": "https://noahalter.com/#portrait-studio",
+        "contentUrl": "https://noahalter.com/assets/photo-2.jpg",
+        "url": "https://noahalter.com/assets/photo-2.jpg",
+        "name": "Noah Alter studio portrait",
+        "caption": "Studio portrait of Noah Alter.",
+        "creator": { "@id": "https://noahalter.com/#noah-alter" }
+      },
+      {
+        "@type": "ImageObject",
+        "@id": "https://noahalter.com/#portrait-outdoor",
+        "contentUrl": "https://noahalter.com/assets/photo-8.jpg",
+        "url": "https://noahalter.com/assets/photo-8.jpg",
+        "name": "Noah Alter outdoor portrait",
+        "caption": "Outdoor portrait of Noah Alter.",
+        "creator": { "@id": "https://noahalter.com/#noah-alter" }
       },
       {
         "@type": "WebSite",
@@ -64,6 +106,9 @@
         "name": "Noah Alter — Portfolio",
         "mainEntity": {
           "@id": "https://noahalter.com/#noah-alter"
+        },
+        "primaryImageOfPage": {
+          "@id": "https://noahalter.com/#portrait-main"
         },
         "isPartOf": {
           "@id": "https://noahalter.com/#website"
@@ -427,7 +472,7 @@
 
   <footer class="footer shell">
     <span>NOAH ALTER © 2026</span>
-    <span>NEW JERSEY</span>
+    <span>NEW JERSEY · <a href="/photos.html" style="color:inherit;text-decoration:none">PHOTOS</a></span>
   </footer>
 
   <script src="script.js"></script>
