@@ -182,3 +182,5 @@ body{overflow-x:hidden}
   .bridge-side{padding:28px;min-height:340px}
   .bridge-side h3{font-size:2.5rem}
 }
+
+.process-accent{color:#356fb2;font-family:Manrope,system-ui,sans-serif;font-style:normal;font-weight:800}
